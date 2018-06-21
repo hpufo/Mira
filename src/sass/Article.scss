@@ -1,0 +1,31 @@
+@mixin hover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.article{
+  background-color: #fff;
+  &:not(:first-of-type){
+    margin: 8px 0 0 0;
+  }
+}
+.fullArticle{
+  background-color: #EEEEEE;
+}
+.title{
+  @include hover();
+}
+
+.selected{
+  background-color: #CED9DE;
+  @include hover();
+}
+
+.author{
+
+}
+
+.body{
+
+}
